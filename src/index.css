@@ -5,19 +5,19 @@
   font-family: montserrat, sans-serif;
 }
 
-input, button {
+/* input, button {
   appearance: none;
   background:none;
   border:none;
   outline:none;
-}
+} */
 
 .App {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(244, 242, 242, 0.917);
+  background-color: rgba(245, 244, 244, 0.917);
 }
 
 form svg{
@@ -57,13 +57,15 @@ form .form-inner .form-group {
   font-size:12px;
   margin-bottom: 5px;
   transition: 0.4s;
+  font-weight: bold;
+  padding-left: 10px;
 }
 
 .forgot-password{
   display: block;
   color: rgb(119, 243, 210);
   font-size:12px;
-  margin-top:20px;
+  margin-top:30px;
   margin-bottom: 30px;
   text-decoration: none;
 }
@@ -74,22 +76,26 @@ form .form-inner .form-group {
 
 form .form-inner .form-group input {
   display:block;
-  width: 100%;
+  width: 70%;
   padding: 10px 15px;
-  background-color: #F8F8F8;
-  border-radius: 8px;
   transition: 0.4s;
+  border:2px solid rgb(226, 226, 226);
 }
 
-form .form-inner .form-group input:focus {
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+form .form-inner .form-group input::placeholder {
+  color:rgb(200, 199, 199);
 }
+
+/* form .form-inner .form-group input:focus {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+} */
 
 form .form-inner input[type="submit"],
 .welcome button {
   display:inline-block;
   padding: 10px 50px 10px 50px;
   border-radius: 1px;
+  border: none;
   background-color: rgb(119, 243, 210);
   background-size: 200%;
   background-position: 0%;
