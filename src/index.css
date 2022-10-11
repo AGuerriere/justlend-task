@@ -23,7 +23,7 @@ svg{
 form {
   display: block;
   position: relative;
-  border:2px solid rgb(226, 226, 226);
+    border:2px solid rgb(226, 226, 226);
 }
 
 
@@ -89,11 +89,6 @@ form input[type="submit"],
   color: #FFF;
   font-weight: 400;
   cursor: pointer;
-}
-
-form .form-inner input[type="submit"]:hover,
-.welcome button:hover {
-  background-position: 100% 0% ;
 }
 
 .welcome {
