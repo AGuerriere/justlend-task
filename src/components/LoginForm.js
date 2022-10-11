@@ -11,8 +11,9 @@ function LoginForm({ Login, error }) {
   }
 
   return (
-    <form onSubmit={submitHandler}>
+    <div>
       <Logo />
+      <form onSubmit={submitHandler}>
       <div className="form-inner"> 
         {(error != "")? (<div className="error">{error}</div>) : ""}
 
@@ -27,9 +28,13 @@ function LoginForm({ Login, error }) {
         <div className="form-group">
         <a href="#" className="forgot-password">Forgot password?</a>
         </div>
+      </div>
+      <div className="submit-button">
         <input type="submit" value="Login" />
       </div>
+      
     </form>
+    </div>
   )
 }
 
