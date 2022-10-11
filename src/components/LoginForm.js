@@ -24,7 +24,10 @@ function LoginForm({ Login, error }) {
           <label htmlFor="password">Password:</label>
           <input type="password" name="password" id="password" onChange={e => setDetails({...details, password: e.target.value})} value={details.password}/>
         </div>
-        <input type="submit" value="LOGIN" />
+        <div className="form-group">
+        <a href="#" className="forgot-password">Forgot password?</a>
+        </div>
+        <input type="submit" value="Login" />
       </div>
     </form>
   )
