@@ -23,6 +23,7 @@ svg{
 form {
   display: block;
   position: relative;
+  border:2px solid rgb(226, 226, 226);
 }
 
 
